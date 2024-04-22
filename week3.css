@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin-top: 8%;
+    color: #382019;
+}
+body{
+    background: radial-gradient(1091px at 106.5% 111.5%, rgb(233, 231, 210) 0.1%, rgb(202, 154, 117) 42.2%, rgb(173, 139, 126) 74.3%, rgb(109, 82, 82) 100.2%);}
+nav{
+    overflow: hidden;
+    list-style-type: none;
+    margin: 30px;
+    padding: 10px;
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+li{
+    justify-content: space-between;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #0c4aa1;
+}
+#about{
+    display: block;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+    height: 50%;
+    line-height: 25px;
+}
+#about p{
+    margin: 20px;
+    padding: 20px;
+    color: #d9b650;
+    font-size: 20px;
+}
+#projects{
+    font-size: 40px;
+    margin: 30px;
+    padding: 20px;  
+    text-align: center; 
+}
+.project{
+    font-size: 20px;
+    padding: 30px;
+    border: none;
+    background-color: #d9b650;
+    border-radius: 20px;
+    width: 40%;
+    height: 80%;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+img{
+    width: 100%;
+    border: 5px solid #eeedbe;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px auto;
+    display: block;
+    transition: all ease-in-out 2s;   
+}
+img:hover{
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+button{
+    padding: 20px 35px;
+    float: inline-end;
+    border-radius: 25px;
+}
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#contact h2{
+    color: rgb(35, 35, 136);
+    font-size: 55px;
+    font-weight: 700;
+}
+form{
+    border: 2px solid blanchedalmond;
+    width: 30%;
+    text-align: start;
+    padding: 30px;
+}
+form input{
+    padding: 15px 35px;
+    margin: 10px;
+}
+textarea{
+    padding: 15px 35px;
+}
+footer{
+    text-align: center;
+    margin: 60px;
+    font-size: 30px;
+    color: red;
+}
+@media screen and (max-width: 600px){
+    img{
+        width: 100%
+    }
+    ul{
+    flex-direction: columns;
+    }
+}
